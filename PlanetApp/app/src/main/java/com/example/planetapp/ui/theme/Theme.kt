@@ -8,28 +8,27 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
-private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+private val LightColorScheme = lightColorScheme(
+    primary = Color(0xFF5114FF), // Cor principal (para botões, por exemplo)
+    onPrimary = Color.White, // Cor do texto ou ícones sobre a cor primária
+    secondary = Color(0xFF76B2FF), // Cor secundária
+    onSecondary = Color.Black,
+    background = Color(0xFF02BEFA), // Fundo padrão da aplicação
+    surface = Color(0xFFFFFFFF), // Fundo dos cards ou superfícies elevadas
+    onSurface = Color.Black // Texto ou ícones em superfícies
 )
 
-private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+private val DarkColorScheme = darkColorScheme(
+    primary = Color(0xFF6000D9),
+    onPrimary = Color.Black,
+    secondary = Color(0xFF00BCD4),
+    onSecondary = Color.Black,
+    background = Color(0xFF121212),
+    surface = Color(0xFF1E1E1E),
+    onSurface = Color.White
 )
 
 @Composable

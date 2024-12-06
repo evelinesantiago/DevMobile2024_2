@@ -30,6 +30,7 @@ import com.example.planetapp.ui.components.TopAppBarWithMenu
 fun HomeScreen(
    onPlanetSelected: (Planet) -> Unit,
    onSettingsClick: () -> Unit,
+   onHelpClick: () -> Unit
 ) {
     var searchQuery by remember { mutableStateOf("") }
     val filteredPlanets = remember(searchQuery) {

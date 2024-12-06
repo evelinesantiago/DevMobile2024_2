@@ -20,30 +20,16 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            NavGraph(
-                onSettingsClick = {
-
-                },
-                onHelpClick = {
-
-                }
-            )
+            PlanetAppTheme {
+                NavGraph(
+                    onSettingsClick = {
+                        // Ação para Configurações (pode abrir uma nova tela ou exibir um diálogo)
+                    },
+                    onHelpClick = {
+                        // Ação para Ajuda (pode abrir uma nova tela ou exibir um diálogo)
+                    }
+                )
+            }
         }
     }
 }
-//
-//@Composable
-//fun Greeting(name: String, modifier: Modifier = Modifier) {
-//    Text(
-//        text = "Hello $name!",
-//        modifier = modifier
-//    )
-//}
-//
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    PlanetAppTheme {
-//        Greeting("Android")
-//    }
-//}

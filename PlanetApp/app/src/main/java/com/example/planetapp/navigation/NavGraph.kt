@@ -17,8 +17,7 @@ import com.example.planetapp.ui.screens.DetailScreen
 import com.example.planetapp.ui.screens.FavoritesScreen
 import com.example.planetapp.ui.screens.HomeScreen
 
-sealed class BottomBarScreen(val route: String, val icon:
-@Composable () -> Unit, val label: String) {
+sealed class BottomBarScreen(val route: String, val icon: @Composable () -> Unit, val label: String) {
     object Home : BottomBarScreen(
         route = "home",
         icon = { androidx.compose.material3.Icon(Icons.Default.Home, contentDescription = "Home") },
@@ -64,7 +63,7 @@ fun NavGraph(
                     onPlanetSelected = { planet ->
                         navController.navigate("details/${planet.name}")
                     },
-                    onFavoriteToogle = { planet ->
+                    onFavoriteToggle = { planet ->
                         planet.isFavorite = !planet.isFavorite
                     }
                 )
