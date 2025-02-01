@@ -7,7 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.investidorapp.ui.view.InvestidorScreen
-import com.example.investidorapp.viewmodel.InvestimentosViewModel
+import com.example.investidorapp.viewmodel.InvestimentosViewmodel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
                 101
             )
         setContent {
-           val viewModel: InvestimentosViewModel = viewModel()
+           val viewModel: InvestimentosViewmodel = viewModel()
             InvestidorScreen(viewModel)
         }
     }
