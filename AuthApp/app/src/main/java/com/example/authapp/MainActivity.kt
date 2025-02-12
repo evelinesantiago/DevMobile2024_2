@@ -16,7 +16,8 @@ import com.example.authapp.ui.view.RegisterScreen
 import com.example.authapp.viewmodel.AuthViewModel
 import com.example.authapp.viewmodel.AuthViewModelFactory
 
-class MainActivity : ComponentActivity() {
+class
+MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
